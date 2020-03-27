@@ -1,3 +1,5 @@
+![Alt Text](https://media2.giphy.com/media/2WH6sqGKm027uq1Q9G/giphy.gif)
+
 # Project Overview
 
 ## Project Links
