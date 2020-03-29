@@ -16,15 +16,17 @@ function App() {
         // setIsLoading(true);
         const res = await fetch(launchURL);
         const json = await res.json();
+        // const response= json.parse(launchURL)
         setLaunches(json);
-        console.log('show json is receiving data in main ',json[0].rocket.rocket_name)
+        // console.log('show json is receiving data in main ',json[0].rocket.rocket_name)
+        // console.log('response----app',response)
         // setIsLoading(false);
       };
       makeAPICall();
     }, []);
 
 
-    console.log('launches in app', launches)
+    // console.log('launches in app', launches)
     // console.log('launches in app', props)
   return (
     <div className="App">
@@ -47,6 +49,10 @@ function App() {
       <Route 
         path='/gallery'
         render={props => <Gallery {...props} launches={launches} />}
+      />
+      <Route 
+        path='/gallery/:id'
+        render={props => <Details {...props} launches={launches} />}
       />
       <Route 
         path='/timeline'
