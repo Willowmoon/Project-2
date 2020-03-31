@@ -47,11 +47,12 @@ function App() {
         render={props => <Home {...props} launches={launches} />}
       />
       <Route 
-        path='/gallery'
+        exact path='/gallery'
         render={props => <Gallery {...props} launches={launches} />}
       />
       <Route 
-        path='/gallery/:id'
+        // path='/details'
+        path="/gallery/:id"
         render={props => <Details {...props} launches={launches} />}
       />
       <Route 

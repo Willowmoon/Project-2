@@ -1,8 +1,9 @@
 import React from 'react'
 import { Link } from "react-router-dom"
+import Card from 'react-bootstrap/Card'
 
 function Gallery(props) {
-  // console.log('launches in gallery ', props.launches)
+  // console.log('launches in gallery ', props)
   // console.log('launches-onestepfurther in gallery ', props.launches[0])
   if (!props.launches) {
     return <></>
@@ -11,15 +12,19 @@ function Gallery(props) {
       // console.log('HEREHEREHERE GALLERY MAPPED PROPS',icon)
     return (
         <div key={i}>
-        <Link to={`/gallery/${icon.mission_id}`}>
-         <h1>{icon.rocket.rocket_name}</h1> </Link>
-         {/* <p>{icon.links.mission_patch_small}</p>  */}
-         <p>{icon.links.article_link}</p> 
-         
+          <Card style={{ width: '18rem' }}>
+          {icon.links.mission_patch_small ? <Card.Img variant="top" src ={icon.links.mission_patch_small}/>: <h1>Info Coming soon</h1>}
+          <Card.Body>
+            <Card.Title><h1>{icon.mission_name}</h1> </Card.Title>
+            <button variant="primary"><Link to={`/gallery/${icon.launch_date_unix}`}>Go somewhere</Link></button>
+          </Card.Body>
+        </Card>
+         {/* <p>{icon.links.article_link}</p>  */}
+{/*          
          <p>{icon.details}</p> 
          {icon.links.mission_patch_small ? <img alt = "" src ={icon.links.mission_patch_small}/>: <h1>Info Coming soon</h1>}
          <button><a href={icon.links.wikipedia} target="_blank">Wikipedia</a></button> 
-         <p>{icon.links.youtube}</p> 
+         <p>{icon.links.youtube}</p>  */}
         </div>
       )
     })

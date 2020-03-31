@@ -8,24 +8,26 @@ const Details= props => {
     if (!props.launches) {
         return <></>
     }
-    const park = props.launches.filter(park => park.name === props.match.params.name)
-    // const icons = props.launches.map((icon, i) => {
-        console.log('THIS ONE-DETAILS',props.launches[0].mission_name)
         console.log('THIS ONE-DETAILS',props)
-        // const filter = props.launches[0].mission_name.filter(filter => filter.launches[0].mission_name === props.launches[0].mission_name)
-    // const stuff = props.launches.filter(stuff => stuff.launches === props.launches)
-    return (
-        <div key=''>
-            <Carousel
-        centered
-        dots
-      >
-          <img alt = "" src="https://images.unsplash.com/photo-1494548162494-384bba4ab999?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80" />
-      </Carousel>
-        </div>
-    )
-    // })
-    // return <div>{icons}</div>
+        console.log('THIS ONE-DETAILS',typeof props.launches[0].launch_date_unix)
+        console.log('THIS ONE-DETAILS',typeof props.match.params.id)
+        // const filterMapyall= Object.values(props.launches.launch_date_unix).map((index, i) => {
+            // console.log(index)
+            // console.log(typeof index)
+            // const something = index.launch_date_unix
+        //  const filterStuff = index.filter((item, i) => item.launch_date_unix.stringify() === props.match.params.id)
+        // })
+        // 
+        // console.log(filterStuff)
+        //map within a filter within a map within a filter within a map within a filter all work and no play makes,,......sdf.sdf.sadfksdjafskjdah
+        // const okayJustWork = props.launches.map((shiet, i ) => {
+        //     const filterStuff = props.launches.filter(item => item.launch_date_unix === props.match.params.id)
+        //         return (<>{filterStuff}</>)
+        //     }
+        //filter
+        // 
+        
+      return <div>stuff yall</div>
 }
 
 export default Details

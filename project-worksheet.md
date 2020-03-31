@@ -77,10 +77,10 @@ Based on the initial logic defined in the previous sections try and breakdown th
 
 Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe. Also, put a gif at the top of your Readme before you pitch, and you'll get a panda prize.
 
-| Component | Priority | Estimated Time | Time Invetsted | Actual Time |
+| Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 | Creating Timeline | H | 8hrs| - | - |
-| Working with API | H | 3hrs| - | - |
+| Working with API | H | 3hrs| 9hrs | 9hrs |
 | Page Architecture | H | 3hrs| - | - |
 | Details page | H | 3hrs| - | - |
 | Image Gallery | L | 3hrs| - | - |
@@ -88,9 +88,7 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | CSS styling | H | 8hrs+ | - | - |
 | Animations | L | 4hrs | - | - |
 | Pop-up interactivity for timeline | L | 3hrs| - | - |
-| gallery slider integration to timeline and details | L | 3hrs| - | - |
-
-| Total | H | 43hrs | - | - |
+| Total | H | 40hrs | - | - |
 
 ## Additional Libraries
  Use this section to list all supporting libraries and thier role in the project such as Axios, ReactStrap, D3, etc. 

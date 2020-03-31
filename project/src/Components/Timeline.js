@@ -10,7 +10,7 @@ function Timeline(props) {
         return <></>
     }
         const icons = props.launches.map((icon, i) => {
-          // console.log('HEREHEREHERE GALLERY MAPPED PROPS',icon)
+          console.log('HEREHEREHERE GALLERY MAPPED PROPS',icon)
         return (
             <div key={i}>
                 <VerticalTimelineElement
@@ -20,7 +20,7 @@ function Timeline(props) {
                     date="2011 - present"
                     iconStyle={{ background: '#2B4867', color: '#fff' }}
                 >
-            <Link to={`/gallery/${icon.mission_id}`}>
+            <Link to={`/gallery/${icon.launch_date_unix}`}>
              <h1>{icon.rocket.rocket_name}</h1> </Link>
              {/* <p>{icon.links.mission_patch_small}</p>  */}
              {/* <p>{icon.links.article_link}</p>  */}
@@ -42,6 +42,8 @@ function Timeline(props) {
             </div>
         )
       }
+
+export default Timeline
     // console.log('timeline props yall',props.launches[33])
     // return (
     //     <div>
@@ -61,6 +63,3 @@ function Timeline(props) {
     //         </VerticalTimeline>
     //     </div>
     // )
-
-
-export default Timeline
