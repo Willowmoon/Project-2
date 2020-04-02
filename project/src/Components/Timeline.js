@@ -10,14 +10,14 @@ function Timeline(props) {
         return <></>
     }
         const icons = props.launches.map((icon, i) => {
-          console.log('HEREHEREHERE GALLERY MAPPED PROPS',icon)
+          console.log('Timeline-Map',icon)
         return (
             <div key={i}>
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work"
                     contentStyle={{ background: '#21272B', color: '#fff' }}
                     contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-                    date="2011 - present"
+                    date={icon.launch_year}
                     iconStyle={{ background: '#2B4867', color: '#fff' }}
                 >
             <Link to={`/gallery/${icon.launch_date_unix}`}>

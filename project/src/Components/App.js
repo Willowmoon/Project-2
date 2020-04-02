@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react"
-import { Route, Switch, Link } from "react-router-dom"
+import { Route, Switch} from "react-router-dom"
 import '../App.css';
 import Gallery from "./Gallery"
 import Details from "./Details"
 import Timeline from "./Timeline"
 import Home from './Home'
+import Header from './Header';
 
 function App() {
   //call json here
@@ -30,17 +31,7 @@ function App() {
   // console.log('launches in app', props)
   return (
     <div className="App">
-      <nav>
-        <Link to="/" style={{ textDecoration: "none" }}>
-          <h1 className="navText" >Launch Site</h1>
-        </Link>
-        <Link to="/gallery" style={{ textDecoration: "none" }}>
-          <h2 className="navText" >Gallery</h2>
-        </Link>
-        <Link to="/timeline" style={{ textDecoration: "none" }}>
-          <h2 className="navText" >Timeline</h2>
-        </Link>
-      </nav>
+      <Header />
       <Switch>
         <Route
           exact path='/'
