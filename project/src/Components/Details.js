@@ -34,7 +34,7 @@ const Details = props => {
                 {mapStart}
             </Carousel> : <></>}
             <div className="detailsContent">
-            {filterMap.rocket.rocket_name ? <p>Rocket used: {filterMap.rocket.rocket_name} </p> : <></>}
+            {filterMap.rocket.rocket_name ? <h2>Rocket used: {filterMap.rocket.rocket_name} </h2> : <></>}
             {filterMap.details ? <p>{filterMap.details}</p> : <h2>Details coming soon!</h2>}
 
             <div className="articles">
